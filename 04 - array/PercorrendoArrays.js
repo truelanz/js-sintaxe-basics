@@ -23,3 +23,30 @@ for (let i = 0; i < nome.length; i++) {
     const letra = nome[i];
     console.log(letra);
 }
+
+
+// acessando array de um Objeto
+const obj = {
+    chars: ["A", "B", "C"]
+}
+        
+    let letraA = ""
+    let letraB = ""
+    let letraC = ""
+
+    for(let i = 0; i < obj.chars.length; i++) {
+        let letras = obj.chars[i];
+        console.log(letras)
+    if(letras == 'A') {
+        letraA = letras;
+    } if (letras == 'B') {
+        letraB = letras;
+    } else {
+        letraC = letras;
+    }
+    }
+
+    console.log("---")
+    console.log(letraA)
+    console.log(letraB)
+    console.log(letraC)
